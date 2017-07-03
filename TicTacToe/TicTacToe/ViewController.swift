@@ -59,12 +59,13 @@ class ViewController: UIViewController {
                     return
                 }))
                 self.present(alert, animated: true, completion: nil)
+                break
             }
         }
     }
     
     func reset() {
-        self.gameState = [0,0,0,0,0,0,0]
+        self.gameState = [0,0,0,0,0,0,0,0,0]
         self.activePlayer = 1
         
         for i in 1..<10 {
